@@ -14,11 +14,10 @@ class LoginController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index()
 
     {
-        $name = $request->name ?? '';
-        return view('login',['name'=>$name]);
+        return view('login');
     }
 
     /**
@@ -45,7 +44,7 @@ class LoginController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        echo 123;die;
     }
 
     /**
